@@ -52,6 +52,4 @@ tox/                       # (if any) reusable component files
 - [Known limitations — e.g. lighting sensitivity, tracking drops at fast movement, single-hand only]
 - [Performance notes — GPU used, resolution/FPS it was built/tested at]
 
-## License
 
-[MIT / All rights reserved / etc.]
