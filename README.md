@@ -1,21 +1,57 @@
-# r3ad TouchDesigner Project
+# r3ad — Hand Tracking Energy Effect 🖐️⚡
 
-A creative coding and interactive project built in **TouchDesigner**.
+A real-time TouchDesigner piece where hand movement drives a dynamic energy/particle effect — tracked hands become the source of glowing, reactive visuals.
 
-## 📌 About
-[Write 1-2 sentences here describing what your project does. For example: *This project explores real-time audio-reactive visuals / interactive particle systems / computer vision tracking using TouchDesigner.*]
+## Overview
 
-## ✨ Features
-* Real-time visual generation
-* [Feature 2, e.g., Audio reactivity via CHOPs]
-* [Feature 3, e.g., Custom GLSL shaders / UI controls]
+This project uses real-time hand tracking to drive a particle/energy visual effect in TouchDesigner. As the hand moves, [describe what happens — e.g. "particles trail from the fingertips," "an energy field pulses around the palm," "the effect intensifies with fist/open-hand gestures"]. Built as [a class project / personal exploration / performance tool / etc.].
 
-## 🛠️ Prerequisites & Setup
-To run this project, you will need:
-* **TouchDesigner** (Commercial, Non-Commercial, or Educational version) installed.
-* **Git LFS** (Large File Storage) installed, if you are cloning the repository yourself, to ensure the `.toe` files download correctly.
+## Requirements
 
-## 🚀 Getting Started
-1. Clone the repository or download the files:
+- TouchDesigner **2025.33230** (or note the minimum version)
+- OS: Windows
+- Webcam (or other camera source used for tracking)
+- Hand tracking method: [MediaPipe via Python / Kinect / Leap Motion / TDAbleton or other — specify which]
+- [Any Python packages needed, e.g. `mediapipe`, `opencv-python` — list exact versions if it matters]
+
+## Project structure
+
+```
+r3ad TouchDesigner.toe    # main project file
+docs/                      # screenshots, preview gif/video
+tox/                       # (if any) reusable component files
+```
+
+## Setup
+
+1. Clone the repo:
    ```bash
-   git clone [https://github.com/ayauuu/r3ad-touchdesigner.git](https://github.com/ayauuu/r3ad-touchdesigner.git)
+   git clone https://github.com/yourusername/yourrepo.git
+   ```
+2. [If using MediaPipe/Python] Install dependencies:
+   ```bash
+   pip install mediapipe opencv-python
+   ```
+3. Open `r3ad TouchDesigner.toe` in TouchDesigner.
+4. Make sure your webcam is connected and selected as the input device.
+5. [Any other setup — e.g. "hit play on the Video Device In TOP", "run the hand tracking script from the Text DAT / Execute DAT"]
+
+## How it works (brief)
+
+- **Input**: [webcam → hand tracking method] extracts hand landmark positions (fingertips, palm center, etc.)
+- **Mapping**: those coordinates drive [particle emitter position / noise field / GLSL shader parameters / etc.]
+- **Output**: rendered as [particles / trails / glow shader] composited over [camera feed / black background / etc.]
+
+## Controls / Usage
+
+- Move your hand in front of the camera — the effect follows hand position in real time.
+- [Any gesture controls, e.g. "open palm = effect expands," "fist = effect contracts," keyboard toggles, etc. — or remove if none]
+
+## Notes
+
+- [Known limitations — e.g. lighting sensitivity, tracking drops at fast movement, single-hand only]
+- [Performance notes — GPU used, resolution/FPS it was built/tested at]
+
+## License
+
+[MIT / All rights reserved / etc.]
