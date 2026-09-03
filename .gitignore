@@ -1,0 +1,13 @@
+﻿*.to0
+*.to1
+*.to2
+*.to3
+*.to4
+*.to5
+*.to6
+*.to7
+*.to8
+*.to9
+ExtendedStorage/
+Images/cache/
+*.tmp
