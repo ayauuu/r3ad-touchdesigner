@@ -7,8 +7,7 @@ A real-time TouchDesigner piece where hand movement drives a dynamic energy/part
 
 ## Overview
 
-This project uses real-time hand tracking to dr![Uploading Screenshot 2026-09-03 135845.png…]()
-ive a particle/energy visual effect in TouchDesigner. As the hand moves, [describe what happens — e.g. "particles trail from the fingertips," "an energy field pulses around the palm," "the effect intensifies with fist/open-hand gestures"]. Built as [a class project / personal exploration / performance tool / etc.].
+This project uses real-time hand tracking to drive a particle/energy visual effect in TouchDesigner. As the hand moves, [describe what happens — e.g. "particles trail from the fingertips," "an energy field pulses around the palm," "the effect intensifies with fist/open-hand gestures"]. Built as [a class project / personal exploration / performance tool / etc.].
 
 ## Requirements
 
